@@ -1,0 +1,24 @@
+.icon-styles {
+  width: 170px !important;
+  height: 170px !important;
+  margin-left: -80px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-styles {
+  color: red !important;
+  background: black;
+  height: 30vh;
+  border-radius: 10px;
+}
+.text-styles h4 {
+  font-size: 24px;
+  font-weight: 900;
+  color: white;
+}
+.text-styles p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ecd19a;
+}

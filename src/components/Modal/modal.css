@@ -1,0 +1,57 @@
+.modal-img,
+.modal-speech {
+  max-width: 698px;
+  max-height: 701px;
+  color: #212529;
+  font-weight: 700;
+}
+.modal-x-icon {
+  position: absolute;
+  color: #212529;
+  right: 0;
+  font-size: 70px;
+  z-index: 100;
+  stroke-width: 10px;
+}
+.modal-x-icon:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
+.modal-title {
+  font-size: 48px;
+  color: #212529;
+  margin-bottom: 0;
+  margin-top: 10vh;
+  font-weight: 900;
+}
+.modal-span {
+  font-weight: 700;
+  color: #212529;
+}
+.modal-description {
+  color: #6c757d;
+  font-weight: 700;
+  font-style: italic;
+}
+.modal-btn {
+  background-color: #9b180d;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 100px;
+  border: none;
+  display: flex;
+  align-items: center;
+  outline: none;
+  padding: 10px 12px;
+  margin: 5vh;
+}
+.modal-btn:hover {
+  background-color: #0f3345;
+  cursor: pointer;
+}
+.modal-btn svg {
+  font-size: 13px;
+  stroke-width: 140px;
+  margin-right: 0.2vw;
+}

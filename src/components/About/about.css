@@ -1,0 +1,45 @@
+.about {
+  background-color: #9b180d;
+  color: #ecd19a;
+  font-family: "Aclonica", sans-serif;
+  padding: 100px 0;
+}
+.about h2 {
+  font-size: 40px;
+  margin: 0;
+}
+.about p {
+  padding: 48px 15px;
+  font-size: 16px;
+  width: 1110px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .about p {
+    width: 930px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .about p {
+    width: 690px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about p {
+    width: 510px;
+  }
+  .banner h2 {
+    font-size: 22px;
+    font-style: italic;
+  }
+  .banner h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about p {
+    width: 90%;
+  }
+}

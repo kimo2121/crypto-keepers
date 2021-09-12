@@ -1,0 +1,136 @@
+.navbar {
+  z-index: 10;
+  background-color: #0f3345;
+  box-sizing: border-box;
+  width: 100vw;
+  position: fixed;
+  padding: 20px 0 20px 0;
+  box-shadow: 0px 3px 5px #9b180d;
+}
+.web-nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  align-items: center;
+  margin: 0 auto;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #ecd19a;
+  transition: all 0.3s;
+  margin: 0 1vw;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.nav-links a:hover {
+  color: white;
+}
+.logo a {
+  font-family: "Aclonica", sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+  color: #ecd19a;
+  transition: all 0.3s;
+}
+
+.accordion__content {
+  overflow: auto;
+  transition: max-height 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.accordion__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+.accordion__content::-webkit-scrollbar {
+  display: none;
+}
+.slide-menu {
+  display: none;
+}
+.menu-slide-btn {
+  font-size: 12px;
+  right: 0;
+  display: flex;
+  position: relative;
+  z-index: 100000;
+  cursor: pointer;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: white;
+  border: 0;
+  background-color: #9b180d;
+}
+
+.slide-menu-icon {
+  position: relative;
+  z-index: 100000;
+  font-size: 20px;
+  color: white;
+}
+
+.accordion__content a {
+  color: #ecd19a;
+  margin: 2vh 0;
+  transition: color 0.1s;
+  letter-spacing: 1px;
+}
+.accordion__content a:hover {
+  color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .web-nav {
+    width: 930px;
+  }
+}
+@media screen and (max-width: 976px) {
+  .nav-links {
+    display: none;
+  }
+  .web-nav {
+    display: none;
+  }
+
+  .slide-menu {
+    display: block;
+  }
+  .slide-outter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 990px) {
+  .slide-outter {
+    width: 720px;
+    margin: 0 auto;
+  }
+  .accordion__content {
+    width: 720px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slide-outter {
+    width: 540px;
+    margin: 0 auto;
+  }
+  .accordion__content {
+    width: 540px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .accordion__content,
+  .slide-outter {
+    width: 90%;
+  }
+}

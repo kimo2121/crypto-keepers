@@ -1,0 +1,81 @@
+.banner {
+  background-image: url("/src/assets/images/header.png");
+  background-size: 100% 250%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  justify-content: center;
+  text-align: left;
+  font-family: "Aclonica", sans-serif;
+  color: white;
+}
+.banner-btn {
+  background-color: #9b180d;
+  border: none;
+  padding: 20px 40px;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  max-width: 325px;
+  transition: all 0.2s;
+  border-radius: 100px;
+}
+.banner-btn:hover {
+  color: #ecd19a;
+  cursor: pointer;
+  background-color: #0f3345;
+}
+.banner h2 {
+  font-size: 40px;
+  font-style: italic;
+}
+.banner h1 {
+  font-size: 75px;
+}
+.banner-inner {
+  width: 1140px;
+  box-sizing: content-box;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .banner-inner {
+    width: 930px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .banner-inner {
+    width: 690px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-inner {
+    width: 510px;
+  }
+  .banner h2 {
+    font-size: 22px;
+    font-style: italic;
+  }
+  .banner h1 {
+    font-size: 50px;
+  }
+  .banner {
+    background-image: url("/src/assets/images/header2.png");
+    background-size: 120% 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .banner-inner {
+    width: 90%;
+  }
+  .banner {
+    background-size: 140% 120%;
+  }
+}
