@@ -68,21 +68,21 @@ const Navbar: React.FC = () => {
             </a>
           </Link>
           <Link smooth={true} duration={800} to="About">
-            <a onClick={() => setMenu(false)}>ABOUT</a>
+            <a onClick={toggleAccordion}>ABOUT</a>
           </Link>
           <Link smooth={true} duration={800} to="Mint">
-            <a onClick={() => setMenu(false)}>MINT</a>
+            <a onClick={toggleAccordion}>MINT</a>
           </Link>
           <Link smooth={true} duration={800} to="RoadMap">
-            <a onClick={() => setMenu(false)}>ROADMAP</a>
+            <a onClick={toggleAccordion}>ROADMAP</a>
           </Link>
           <Link smooth={true} duration={800} to="Team">
-            <a onClick={() => setMenu(false)}>TEAM</a>
+            <a onClick={toggleAccordion}>TEAM</a>
           </Link>
           <Link smooth={true} duration={800} to="FAQ">
-            <a onClick={() => setMenu(false)}>FAQ</a>
+            <a onClick={toggleAccordion}>FAQ</a>
           </Link>
-          <a onClick={() => setMenu(false)}>DISCORD</a>
+          <a onClick={toggleAccordion}>DISCORD</a>
         </div>
       </div>
     </div>
