@@ -20,7 +20,7 @@ const Home: React.FC = () => {
       </div>
       <About />
       <Mint />
-      <Survival />
+      {/* <Survival /> */}
       <RoadMap />
       <Team />
       <CustomizedAccordions />
