@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   return (
     <div className="footer">
       <div className="inner-div">
-        <h4>Copyright © Your Website 2021</h4>
+        <p>Copyright © Crypto Keeperz Club 2021</p>
         <div className="footer-external">
           <a className="twitter" href="/">
             <FaTwitter />

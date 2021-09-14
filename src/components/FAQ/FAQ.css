@@ -29,13 +29,14 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  font-family: "Aclonica", sans-serif;
   left: 0;
   top: 0;
   right: 0;
   padding: 100px 0;
 }
-
+.MuiTypography-root {
+  font-family: "Aclonica", sans-serif !important;
+}
 @media screen and (max-width: 1200px) {
   .accordion-wrpper {
     width: 930px;

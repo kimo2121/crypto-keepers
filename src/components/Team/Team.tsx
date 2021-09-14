@@ -26,9 +26,9 @@ const Team: React.FC = () => {
         </div>
       </div>
       <p className="team-parag">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
-        laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea,
-        alias ut unde.
+        Our team are here for the Crypto Keeperz community. Please feel free to
+        any of the team with any questions regarding the project via Twitter or
+        Discord
       </p>
     </div>
   );

@@ -15,7 +15,7 @@ const Home: React.FC = () => {
         <div className="banner-inner">
           <h2>Welcome To The</h2>
           <h1>CRYPTO KEEPERZ CLUB</h1>
-          <button className="banner-btn">ABOUT CRYPTO KEEPERS</button>
+          <button className="banner-btn">ABOUT CRYPTO KEEPERS CLUB</button>
         </div>
       </div>
       <About />

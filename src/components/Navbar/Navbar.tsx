@@ -1,12 +1,21 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./navbar.css";
 import { Link } from "react-scroll";
 import { HiMenu } from "react-icons/hi";
+import logoIcon from "../../assets/images/logoIcon.png";
 const Navbar: React.FC = () => {
   const [menu, setMenu] = useState(false);
-
   const [setActive, setActiveState] = useState("");
   const [setHeight, setHeightState] = useState("0px");
+  const [navbar, setNavbar] = useState(false);
+  const changeHeight = (): void => {
+    if (window.scrollY > 103) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", changeHeight);
 
   const content: any = useRef(null);
 
@@ -16,38 +25,41 @@ const Navbar: React.FC = () => {
       setActive === "active" ? "0px" : `${content.current.scrollHeight}px`
     );
   }
+
   return (
-    <div className="navbar">
+    <div className={navbar ? "navbar height" : "navbar"}>
       <div className="web-nav">
-        <div className="logo">
-          <a href="/">Crypto Keepers</a>
+        <div className={navbar ? "logo height" : "logo"}>
+          <img src={logoIcon} alt="" />
+          <a href="/">Crypto Keepers Club</a>
         </div>
         <div className="nav-links">
-          <Link smooth={true} duration={800} to="Home">
-            <a href="/">HOME</a>
+          <Link activeClass="active" smooth={true} duration={800} to="Home">
+            HOME
           </Link>
-          <Link smooth={true} duration={800} to="About">
-            <a href="/">ABOUT</a>
+          <Link activeClass="active" smooth={true} duration={800} to="About">
+            ABOUT
           </Link>
-          <Link smooth={true} duration={800} to="Mint">
-            <a href="/">MINT</a>
+          <Link activeClass="active" smooth={true} duration={800} to="Mint">
+            MINT
           </Link>
-          <Link smooth={true} duration={800} to="RoadMap">
-            <a href="/">ROADMAP</a>
+          <Link activeClass="active" smooth={true} duration={800} to="RoadMap">
+            ROADMAP
           </Link>
-          <Link smooth={true} duration={800} to="Team">
-            <a href="/">TEAM</a>
+          <Link activeClass="active" smooth={true} duration={800} to="Team">
+            TEAM
           </Link>
-          <Link smooth={true} duration={800} to="FAQ">
-            <a href="/">FAQ</a>
+          <Link activeClass="active" smooth={true} duration={800} to="FAQ">
+            FAQ
           </Link>
-          <a href="https://discord.com/invite/7hWgh456">DISCORD</a>
+          <a href="https://discord.com/invite/xtJmfc5gBx">DISCORD</a>
         </div>
       </div>
       <div className="slide-menu">
         <div className="slide-outter">
-          <div className="logo">
-            <a href="/">Crypto Keepers</a>
+          <div className="logo mobile-logo">
+            <img src={logoIcon} alt="" />
+            <a href="/">Crypto Keepers Club</a>
           </div>
           <button onClick={toggleAccordion} className="menu-slide-btn">
             Menu
@@ -59,30 +71,69 @@ const Navbar: React.FC = () => {
         <div
           ref={content}
           style={{ maxHeight: `${setHeight}` }}
-          // className={menu ? "menu-content active" : "menu-content"}
           className="accordion__content"
         >
-          <Link smooth={true} duration={800} to="Home">
-            <a onClick={toggleAccordion} className="accordion__text">
-              HOME
-            </a>
+          <Link
+            activeClass="active"
+            onClick={toggleAccordion}
+            smooth={true}
+            duration={800}
+            to="Home"
+          >
+            HOME
           </Link>
-          <Link smooth={true} duration={800} to="About">
-            <a onClick={toggleAccordion}>ABOUT</a>
+          <Link
+            activeClass="active"
+            onClick={toggleAccordion}
+            smooth={true}
+            duration={800}
+            to="About"
+          >
+            ABOUT
           </Link>
-          <Link smooth={true} duration={800} to="Mint">
-            <a onClick={toggleAccordion}>MINT</a>
+          <Link
+            activeClass="active"
+            onClick={toggleAccordion}
+            smooth={true}
+            duration={800}
+            to="Mint"
+          >
+            MINT
           </Link>
-          <Link smooth={true} duration={800} to="RoadMap">
-            <a onClick={toggleAccordion}>ROADMAP</a>
+          <Link
+            activeClass="active"
+            onClick={toggleAccordion}
+            smooth={true}
+            duration={800}
+            to="RoadMap"
+          >
+            ROADMAP
           </Link>
-          <Link smooth={true} duration={800} to="Team">
-            <a onClick={toggleAccordion}>TEAM</a>
+          <Link
+            activeClass="active"
+            onClick={toggleAccordion}
+            smooth={true}
+            duration={800}
+            to="Team"
+          >
+            TEAM
           </Link>
-          <Link smooth={true} duration={800} to="FAQ">
-            <a onClick={toggleAccordion}>FAQ</a>
+          <Link
+            activeClass="active"
+            onClick={toggleAccordion}
+            smooth={true}
+            duration={800}
+            to="FAQ"
+          >
+            FAQ
           </Link>
-          <a onClick={toggleAccordion}>DISCORD</a>
+          <a
+            className="mobile-discord-link"
+            onClick={toggleAccordion}
+            href="https://discord.com/invite/xtJmfc5gBx"
+          >
+            DISCORD
+          </a>
         </div>
       </div>
     </div>

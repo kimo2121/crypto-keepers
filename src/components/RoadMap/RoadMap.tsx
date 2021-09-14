@@ -9,30 +9,32 @@ const RoadMap: React.FC = () => {
       <div className="vertical-time-line">
         <span className="vertical-divider web-v-divider"></span>
         <div className="inner-line left">
-          <div className="percent left">25%</div>
+          <div className="percent left">0%</div>
           <div className="line-detail left">
-            <h4>25% SOLD (RANDOM AIRDROP)</h4>
-            <p>BUILD COMMUNITY THROUGH MAKING COLLABORATIONS AND GIVEAWAYS</p>
+            <h4>0% SOLD</h4>
+            <p>
+              BUILD THE COMMUNITY THROUGH MAKING COLLABORATIONS AND GIVEAWAYS
+            </p>
           </div>
         </div>
         <div className="inner-line right">
-          <div className="percent right">50%</div>
+          <div className="percent right">25%</div>
           <div className="line-detail right">
-            <h4>50% SOLD</h4>
+            <h4>25% (RANDOM AIRDROP)</h4>
             <p>
-              NFT GIVEAWAY 1000 NFT RANDOMLY AIRDROPPED TO EARLY ADOPTORS.
+              NFT GIVEAWAY 100 NFT RANDOMLY AIRDROPPED TO EARLY ADOPTORS.
               ASSEMBLE IN THE DISCORD AND SUBMIT A DERIVATIVE IN YOUR STYLE. THE
               COMMUNITY WILL DECIDE ON A WINNER. WINNER WILL RECEIVE A FREE
-              AIRDROP AND 5 ETH AIRDROP HOLDERS WILL GAIN
-              <li>GIVE EARLY ACCESS TO NEW RELEASES</li>
+              AIRDROP AND 1 ETH AIRDROP HOLDERS WILL GAIN
+              <li>EARLY ACCESS TO NEW RELEASES</li>
               <li>METAVERSE PRIVILIGIES</li>
             </p>
           </div>
         </div>
         <div className="inner-line left">
-          <div className="percent left">75%</div>
+          <div className="percent left">50%</div>
           <div className="line-detail left">
-            <h4>75% SOLD</h4>
+            <h4>50% SOLD</h4>
             <p>
               EXCLUSIVE MERCHANDIZE GET UNLOCKED BASED ON CHARACTERS AESTHETICS,
               FEATURING HOODIES/HATS/ T-SHIRT AND OTHER GOODIES
@@ -40,12 +42,12 @@ const RoadMap: React.FC = () => {
           </div>
         </div>
         <div className="inner-line right">
-          <div className="percent right">90%</div>
+          <div className="percent right">75%</div>
           <div className="line-detail right">
-            <h4>90% SOLD METAVERSE PLANNING BEGINS</h4>
+            <h4>75% SOLD METAVERSE PLANNING BEGINS</h4>
             <p>
               THE COMMITY GET TO SUBMIT AN IDEA ON WHAT THEY WOULD LIKE TO HAVE
-              BUILT. AND THE COMMUNITY VOTE. THE WINNING IDEA GET 5ETH
+              BUILT. AND THE COMMUNITY VOTE. THE WINNING IDEA GET 1ETH
             </p>
           </div>
         </div>
@@ -53,7 +55,10 @@ const RoadMap: React.FC = () => {
           <div className="percent left">100%</div>
           <div className="line-detail left">
             <h4>100% SOLD</h4>
-            <p>CRYPTO KEEPERS LIQUIDITY POOL IS INITATED</p>
+            <p>
+              CRYPTO KEEPERS LIQUIDITY POOL IS INITATED BUY UP THE FLOOR ON THE
+              SECONDARY MARKET TO MAINTAIN THE PRICE
+            </p>
           </div>
         </div>
         <div className="inner-line left end">
