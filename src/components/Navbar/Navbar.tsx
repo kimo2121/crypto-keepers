@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
       <div className="web-nav">
         <div className={navbar ? "logo height" : "logo"}>
           <img src={logoIcon} alt="" />
-          <a href="/">Crypto Keepers Club</a>
+          <a href="/">Crypto Keeperz Club</a>
         </div>
         <div className="nav-links">
           <Link activeClass="active" smooth={true} duration={800} to="Home">
@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
         <div className="slide-outter">
           <div className="logo mobile-logo">
             <img src={logoIcon} alt="" />
-            <a href="/">Crypto Keepers Club</a>
+            <a href="/">Crypto Keeperz Club</a>
           </div>
           <button onClick={toggleAccordion} className="menu-slide-btn">
             Menu
